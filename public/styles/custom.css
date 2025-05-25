@@ -1,0 +1,261 @@
+body{
+  background-color: #F5EFE7;
+}
+
+.background{
+  background-color: #3E5879;
+  padding: 4em 4em;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.custom-color{
+  background-color: #213555;
+  border:none;
+  transition:opacity 0.7s
+}
+
+.custom-color:hover{
+  opacity: 0.8;
+}
+
+.task{
+  color: #213555;
+}
+
+.logo{
+  width: 5em;
+}
+
+.navi-color{
+  background-color: #213555;
+}
+
+.hov:hover{
+  background-color: #3E5879;
+  border-radius: 5px;
+  color: #D8C4B6;
+}
+
+.hov{
+  transition: background-color 0.6s;
+  color: #D8C4B6;
+}
+
+.hover-log{
+  transition: background-color 0.6s;
+  padding: 0.4em 1em;
+  color: #F5EFE7;
+}
+
+.hover-log:hover{
+  background-color: #3E5879;
+  border-radius: 4px;
+}
+
+.custom-logout{
+  background-color:#F5EFE7;
+  padding: 0.4em 1em;
+  color: #213555;
+  border-radius: 4px;
+  transition: opacity 0.7s;
+}
+
+.custom-logout:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.custom-bg{
+  background-color: #213555;
+  width: 45em;
+  height: 50em;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+@media (max-width: 992px) {
+  .custom-bg{
+    width: auto;
+  }
+}
+
+.custom-h3{
+  background-color: #334A70; 
+  color: #D8C4B6;
+}
+
+.custom-bg-2{
+  background-color: #D8C4B6;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.custom-ulit{
+  color: #D8C4B6;
+}
+
+.user-hover:hover{
+  background-color: #334A70;
+  cursor: pointer;
+}
+
+.user-hover{
+  padding: 0.5em 1em;
+  transition: background-color 0.7s;
+}
+
+.custom-a{
+  color: #D8C4B6;
+  text-decoration: none;
+}
+
+.dash-color{
+  color: #213555;
+}
+
+.total-circle{
+  background-color: #3E5879;
+}
+
+.number-background{
+  background-color: #F5EFE7;
+  border-radius: 50%;
+  text-align: center;
+  border: none;
+  padding: 1em 1.5em;
+  font-size: 2.5em;
+  color: #213555;
+}
+
+.total-custom{
+  color: #D8C4B6;
+  font-size: 1.7em;
+}
+
+.custom-footer{
+  background-color: #213555 !important;
+  gap: 10em;
+  color: #D8C4B6;
+  padding: 3em 3em;
+  margin-top: 10em;
+}
+
+.footer-custom{
+  color: #D8C4B6;
+}
+
+
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-facebook:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.fa-twitter,
+.fa-facebook,
+.fa-instagram {
+  transition: opacity 0.7s;
+}
+
+.pasilyo{
+  color: #213555;
+}
+
+.ikaw-at-ikaw{
+  background-color: #213555;
+  border: none;
+  transition: opacity 0.7s;
+}
+
+.ikaw-at-ikaw:hover{
+  opacity: 0.8;
+}
+
+.hindi-ko-kayang-umibig-muli{
+  background-color: #D8C4B6;
+}
+
+.custom-size{
+  font-size: 1.1em;
+  width: 80%;
+  margin: auto;
+  line-height: 1.8em;
+}
+
+.hihintayin{
+  color: #213555;
+}
+
+.border-ray{
+  border-radius: 50%;
+  border: 2px solid #213555;
+}
+
+.mem-name{
+  color: #213555;
+}
+
+.mem-role{
+  color: #213555;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+.custom-margin{
+  margin-top: 7em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.hindi{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.muli{
+  cursor: pointer;
+}
+
+.table-back{
+  background-color: #334A70;
+  border-collapse: separate;
+  border: none;
+  border-spacing: 0 15px;
+  overflow-x: auto;
+  min-width: 600px; /* Prevents table from shrinking too much */
+}
+
+.goat-curry{
+  background-color: #213555;
+  color: #D8C4B6;
+  font-size: 1.1em;
+}
+
+.talo-memphis{
+  background-color: #D9D9D9;
+  color: #213555;
+}
+
+.opaci:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.opaci{
+  transition: opacity 0.5s;
+}
+
+.alot{
+  color: #213555
+}
+
+.table-responsive{
+  width: 100%;
+  overflow-x: auto;
+}
+
+.task-row:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+.task-tooltip {
+  transition: opacity 0.3s;
+}
+
+
