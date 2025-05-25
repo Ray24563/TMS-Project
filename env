@@ -14,13 +14,13 @@
 # ENVIRONMENT
 #--------------------------------------------------------------------
 
-# CI_ENVIRONMENT = development
+CI_ENVIRONMENT = development
 
 #--------------------------------------------------------------------
 # APP
 #--------------------------------------------------------------------
 
-# app.baseURL = 'https://task-management-kfun.onrender.com/'
+app.baseURL = 'https://task-management-kfun.onrender.com/'
 # If you have trouble with `.`, you could also use `_`.
 # app_baseURL = ''
 # app.forceGlobalSecureRequests = false
@@ -30,24 +30,24 @@
 # DATABASE
 #--------------------------------------------------------------------
 
-# database.default.hostname = sql306.infinityfree.com
-# database.default.database = if0_39072883_tms_db
-# database.default.username = if0_39072883
-# database.default.password = taskmanage2025
-# database.default.DBDriver = MySQLi
-# database.default.DBPrefix =
-# database.default.port = 3306
+database.default.hostname = sql306.infinityfree.com
+database.default.database = if0_39072883_tms_db
+database.default.username = if0_39072883
+database.default.password = taskmanage2025
+database.default.DBDriver = MySQLi
+database.default.DBPrefix =
+database.default.port = 3306
 
 # If you use MySQLi as tests, first update the values of Config\Database::$tests.
-# database.tests.hostname = sql306.infinityfree.com
-# database.tests.database = if0_39072883_tms_db
-# database.tests.username = if0_39072883
-# database.tests.password = taskmanage2025
-# database.tests.DBDriver = MySQLi
-# database.tests.DBPrefix =
-# database.tests.charset = utf8mb4
-# database.tests.DBCollat = utf8mb4_general_ci
-# database.tests.port = 3306
+database.tests.hostname = sql306.infinityfree.com
+database.tests.database = if0_39072883_tms_db
+database.tests.username = if0_39072883
+database.tests.password = taskmanage2025
+database.tests.DBDriver = MySQLi
+database.tests.DBPrefix =
+database.tests.charset = utf8mb4
+database.tests.DBCollat = utf8mb4_general_ci
+database.tests.port = 3306
 
 #--------------------------------------------------------------------
 # ENCRYPTION
