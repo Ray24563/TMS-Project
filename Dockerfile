@@ -9,6 +9,15 @@ RUN apt-get update && apt-get install -y \
 # Enable Apache mod_rewrite for clean URLs
 RUN a2enmod rewrite
 
+RUN echo '<VirtualHost *:80>\n\
+    DocumentRoot /var/www/html/public\n\
+    <Directory /var/www/html/public>\n\
+        Options Indexes FollowSymLinks\n\
+        AllowOverride All\n\
+        Require all granted\n\
+    </Directory>\n\
+</VirtualHost>' > /etc/apache2/sites-available/000-default.conf
+
 # Allow .htaccess to override settings
 RUN echo '<Directory /var/www/html/public>\n\
     AllowOverride All\n\
