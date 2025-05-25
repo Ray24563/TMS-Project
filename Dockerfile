@@ -10,11 +10,14 @@ RUN apt-get update && apt-get install -y \
 RUN a2enmod rewrite
 
 # Allow .htaccess to override settings
-RUN echo '<Directory /var/www/html>\n\
+RUN echo '<Directory /var/www/html/public>\n\
     AllowOverride All\n\
     Require all granted\n\
 </Directory>' > /etc/apache2/conf-available/allow-override.conf \
     && a2enconf allow-override
+
+# Set Apache DocumentRoot to public/
+RUN sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html/public|' /etc/apache2/sites-available/000-default.conf
 
 # Set working directory
 WORKDIR /var/www/html
@@ -22,6 +25,10 @@ WORKDIR /var/www/html
 # Copy all app files into the container
 COPY . .
 
-# Set correct permissions for writable folder
+# Set correct permissions for writable and logs folders
 RUN chown -R www-data:www-data /var/www/html \
-    && chmod -R 755 /var/www/html/writable
+    && chmod -R 755 /var/www/html/writable \
+    && chmod -R 755 /var/www/html/public
+
+# Optional: Add DirectoryIndex to avoid index errors
+RUN echo 'DirectoryIndex index.php index.html' >> /etc/apache2/apache2.conf
