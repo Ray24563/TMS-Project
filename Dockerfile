@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN a2enmod rewrite
 
-# ✅ Force Apache to serve from /public
+#Force Apache to serve from /public
 RUN echo '<VirtualHost *:80>\n\
     DocumentRoot /var/www/html/public\n\
     <Directory /var/www/html/public>\n\
