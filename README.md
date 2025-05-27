@@ -29,7 +29,7 @@ Kindly access this link for live preview: https://task-management-kfun.onrender.
 
 ## Installation (For Localhosting)
 
-#### 1. Download the source folder
+#### 1. Download the source folder found in other branch of this repository "localhost"
 
 - **ZIP File**
 
@@ -55,13 +55,10 @@ Kindly access this link for live preview: https://task-management-kfun.onrender.
 
 
     
-## Deployment Documentaion
+## Deployment
 
-To deploy this project run
-
-```bash
-  Working...
-```
+- Cloud Web Hosting Platform: **Render**
+- Database Hosting: **Aiven**
 
 
 ## Team Contributions
