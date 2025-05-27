@@ -1,28 +1,30 @@
-FROM php:8.1-apache
+# Dockerfile for deployment of the web application using Render
 
-RUN apt-get update && apt-get install -y \
-    libicu-dev unzip zip \
-    && docker-php-ext-install intl mysqli pdo pdo_mysql
+# FROM php:8.1-apache
 
-RUN a2enmod rewrite
+# RUN apt-get update && apt-get install -y \
+    # libicu-dev unzip zip \
+    # && docker-php-ext-install intl mysqli pdo pdo_mysql
+
+# RUN a2enmod rewrite
 
 # ✅ Force Apache to serve from /public
-RUN echo '<VirtualHost *:80>\n\
-    DocumentRoot /var/www/html/public\n\
-    <Directory /var/www/html/public>\n\
-        Options Indexes FollowSymLinks\n\
-        AllowOverride All\n\
-        Require all granted\n\
-    </Directory>\n\
-</VirtualHost>' > /etc/apache2/sites-available/000-default.conf
+# RUN echo '<VirtualHost *:80>\n\
+    # DocumentRoot /var/www/html/public\n\
+    # <Directory /var/www/html/public>\n\
+        # Options Indexes FollowSymLinks\n\
+        # AllowOverride All\n\
+        # Require all granted\n\
+    # </Directory>\n\
+# </VirtualHost>' > /etc/apache2/sites-available/000-default.conf
 
 # Optional: Fix DirectoryIndex
-RUN echo 'DirectoryIndex index.php index.html' >> /etc/apache2/apache2.conf
+# RUN echo 'DirectoryIndex index.php index.html' >> /etc/apache2/apache2.conf
 
-WORKDIR /var/www/html
+# WORKDIR /var/www/html
 
-COPY . .
+# COPY . .
 
-RUN chown -R www-data:www-data /var/www/html \
-    && chmod -R 755 /var/www/html/writable \
-    && chmod -R 755 /var/www/html/public
+# RUN chown -R www-data:www-data /var/www/html \
+    # && chmod -R 755 /var/www/html/writable \
+    # && chmod -R 755 /var/www/html/public
