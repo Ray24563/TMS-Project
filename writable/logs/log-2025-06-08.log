@@ -1,0 +1,396 @@
+ERROR - 2025-06-08 01:01:53 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'task-management-db' in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'task-management...', 3306, '', 0)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#5 C:\xampp\htdocs\task-management\app\Controllers\DashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#8 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'task-management-db' in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#3 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#4 C:\xampp\htdocs\task-management\app\Controllers\DashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#5 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-08 01:01:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'task-management-db'
+[Method: GET, Route: layouts/home]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `users`', null, false)
+ 3 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+ 4 APPPATH\Controllers\DashboardController.php(21): CodeIgniter\Model->__call('countAll', [])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-08 01:02:27 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'task-management-db' in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'task-management...', 3306, '', 0)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#5 C:\xampp\htdocs\task-management\app\Controllers\DashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#8 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'task-management-db' in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#3 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#4 C:\xampp\htdocs\task-management\app\Controllers\DashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#5 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-08 01:02:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'task-management-db'
+[Method: GET, Route: layouts/home]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `users`', null, false)
+ 3 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+ 4 APPPATH\Controllers\DashboardController.php(21): CodeIgniter\Model->__call('countAll', [])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-08 01:03:27 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'task-management-db' in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'task-management...', 3306, '', 0)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\task-management\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\task-management\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\task-management\app\Controllers\TaskController.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\TaskController->add()
+#8 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TaskController))
+#9 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'task-management-db' in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\task-management\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\task-management\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\task-management\app\Controllers\TaskController.php(30): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\TaskController->add()
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TaskController))
+#8 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-06-08 01:03:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'task-management-db'
+[Method: GET, Route: layouts/add_task]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `status` = :status:', [...], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\TaskController.php(30): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TaskController->add()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TaskController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-08 01:05:37 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'task-management-db' in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'task-management...', 3306, '', 0)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#5 C:\xampp\htdocs\task-management\app\Controllers\DashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#8 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'task-management-db' in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#3 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#4 C:\xampp\htdocs\task-management\app\Controllers\DashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#5 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-08 01:05:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'task-management-db'
+[Method: GET, Route: layouts/home]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `users`', null, false)
+ 3 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+ 4 APPPATH\Controllers\DashboardController.php(21): CodeIgniter\Model->__call('countAll', [])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-08 01:05:46 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'task-management-db' in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'task-management...', 3306, '', 0)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#5 C:\xampp\htdocs\task-management\app\Controllers\DashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#8 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'task-management-db' in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#3 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#4 C:\xampp\htdocs\task-management\app\Controllers\DashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#5 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-08 01:05:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'task-management-db'
+[Method: GET, Route: layouts/home]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `users`', null, false)
+ 3 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+ 4 APPPATH\Controllers\DashboardController.php(21): CodeIgniter\Model->__call('countAll', [])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 03:11:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/user_main.php"
+[Method: GET, Route: layouts/home_user]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/user_main.php')
+ 2 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/user_main', [], true)
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('layouts/home_user', [], true)
+ 4 APPPATH\Controllers\PagesController.php(22): view('layouts/home_user', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PagesController->userHome()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PagesController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-08 13:35:40 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'task-management...', 3306, '', 0)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#5 C:\xampp\htdocs\task-management\app\Controllers\DashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#8 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#3 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#4 C:\xampp\htdocs\task-management\app\Controllers\DashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#5 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-08 13:35:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: layouts/home]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `users`', null, false)
+ 3 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+ 4 APPPATH\Controllers\DashboardController.php(21): CodeIgniter\Model->__call('countAll', [])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-08 13:35:57 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'task-management...', 3306, '', 0)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#5 C:\xampp\htdocs\task-management\app\Controllers\DashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#8 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#3 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#4 C:\xampp\htdocs\task-management\app\Controllers\DashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#5 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-08 13:35:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: layouts/home]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `users`', null, false)
+ 3 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+ 4 APPPATH\Controllers\DashboardController.php(21): CodeIgniter\Model->__call('countAll', [])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 13:45:32 --> ErrorException: Undefined variable $task
+[Method: GET, Route: layouts/task_view]
+in APPPATH\Views\layouts\task_view.php on line 36.
+ 1 APPPATH\Views\layouts\task_view.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $task', 'C:\\xampp\\htdocs\\task-management\\app\\Views\\layouts\\task_view.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\task-management\\app\\Views\\layouts\\task_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('layouts/task_view', [], true)
+ 5 APPPATH\Controllers\PagesController.php(30): view('layouts/task_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PagesController->userTaskView()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PagesController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 13:45:32 --> ErrorException: Undefined variable $task
+[Method: GET, Route: layouts/task_view]
+in APPPATH\Views\layouts\task_view.php on line 36.
+ 1 APPPATH\Views\layouts\task_view.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $task', 'C:\\xampp\\htdocs\\task-management\\app\\Views\\layouts\\task_view.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\task-management\\app\\Views\\layouts\\task_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('layouts/task_view', [], true)
+ 5 APPPATH\Controllers\PagesController.php(30): view('layouts/task_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PagesController->userTaskView()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PagesController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 13:45:32 --> ErrorException: Undefined variable $task
+[Method: GET, Route: layouts/task_view]
+in APPPATH\Views\layouts\task_view.php on line 36.
+ 1 APPPATH\Views\layouts\task_view.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $task', 'C:\\xampp\\htdocs\\task-management\\app\\Views\\layouts\\task_view.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\task-management\\app\\Views\\layouts\\task_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('layouts/task_view', [], true)
+ 5 APPPATH\Controllers\PagesController.php(30): view('layouts/task_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PagesController->userTaskView()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PagesController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 13:45:32 --> ErrorException: Undefined variable $task
+[Method: GET, Route: layouts/task_view]
+in APPPATH\Views\layouts\task_view.php on line 36.
+ 1 APPPATH\Views\layouts\task_view.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $task', 'C:\\xampp\\htdocs\\task-management\\app\\Views\\layouts\\task_view.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\task-management\\app\\Views\\layouts\\task_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('layouts/task_view', [], true)
+ 5 APPPATH\Controllers\PagesController.php(30): view('layouts/task_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PagesController->userTaskView()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PagesController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 13:46:14 --> ErrorException: Undefined variable $task
+[Method: GET, Route: layouts/task_view]
+in APPPATH\Views\layouts\task_view.php on line 36.
+ 1 APPPATH\Views\layouts\task_view.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $task', 'C:\\xampp\\htdocs\\task-management\\app\\Views\\layouts\\task_view.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\task-management\\app\\Views\\layouts\\task_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('layouts/task_view', [], true)
+ 5 APPPATH\Controllers\PagesController.php(30): view('layouts/task_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PagesController->userTaskView()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PagesController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

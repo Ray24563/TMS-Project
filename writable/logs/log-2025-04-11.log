@@ -1,0 +1,36 @@
+ERROR - 2025-04-11 03:02:14 --> mysqli_sql_exception: Duplicate entry 'emailtesting@gmail.com' for key 'email' in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\task-management\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\task-management\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\task-management\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\task-management\system\BaseModel.php(750): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\task-management\app\Controllers\UserController.php(50): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\UserController->save()
+#10 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#11 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+ERROR - 2025-04-11 03:02:14 --> mysqli_sql_exception: Duplicate entry 'emailtesting@gmail.com' for key 'email' in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\task-management\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\task-management\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\task-management\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\task-management\system\BaseModel.php(750): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\task-management\app\Controllers\UserController.php(50): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\UserController->save()
+#10 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#11 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}

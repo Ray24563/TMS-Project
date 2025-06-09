@@ -1,0 +1,586 @@
+body{
+  background-color: #F5EFE7;
+}
+
+.background{
+  background-color: #3E5879;
+  padding: 4em 4em;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 10px 12px;
+}
+
+.link-to-register{
+  color: #3E5879;
+  text-decoration: none;
+}
+
+.link-to-register:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.adjust-margin{
+  margin-top: 2.3em;
+}
+
+.custom-color{
+  background-color: #213555;
+  border:none;
+  transition:opacity 0.7s
+}
+
+.custom-color:hover{
+  opacity: 0.8;
+}
+
+.task{
+  color: #213555;
+}
+
+.logo{
+  width: 5em;
+}
+
+.navi-color{
+  background-color: #213555;
+}
+
+.hov:hover{
+  background-color: #3E5879;
+  border-radius: 5px;
+  color: #D8C4B6;
+}
+
+.hov{
+  transition: background-color 0.6s;
+  color: #D8C4B6;
+}
+
+.hover-log{
+  transition: background-color 0.6s;
+  padding: 0.4em 1em;
+  color: #F5EFE7;
+}
+
+.hover-log:hover{
+  background-color: #3E5879;
+  border-radius: 4px;
+}
+
+.custom-logout{
+  background-color:#F5EFE7;
+  padding: 0.4em 1em;
+  color: #213555;
+  border-radius: 4px;
+  transition: opacity 0.7s;
+}
+
+.custom-logout:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.custom-bg{
+  background-color: #213555;
+  width: 45em;
+  height: 50em;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+@media (max-width: 992px) {
+  .custom-bg{
+    width: auto;
+  }
+}
+
+.custom-h3{
+  background-color: #334A70; 
+  color: #D8C4B6;
+}
+
+.custom-bg-2{
+  background-color: #D8C4B6;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.custom-ulit{
+  color: #D8C4B6;
+}
+
+.user-hover:hover{
+  background-color: #334A70;
+  cursor: pointer;
+}
+
+.user-hover{
+  padding: 0.5em 1em;
+  transition: background-color 0.7s;
+}
+
+.custom-a{
+  color: #D8C4B6;
+  text-decoration: none;
+}
+
+.dash-color{
+  color: #213555;
+}
+
+.dash-color-2{
+  color: #213555;
+  font-family: sans-serif;
+}
+
+.total-circle{
+  background-color: #3E5879;
+}
+
+.number-background{
+  background-color: #F5EFE7;
+  border-radius: 50%;
+  text-align: center;
+  border: none;
+  padding: 1em 1.5em;
+  font-size: 2.5em;
+  color: #213555;
+}
+
+.total-custom{
+  color: #D8C4B6;
+  font-size: 1.7em;
+}
+
+.total-custom-2{
+  color: #D8C4B6;
+  font-size: 1.7em;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.total-custom-3{
+  color:#3E5879;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.custom-footer{
+  background-color: #213555 !important;
+  gap: 10em;
+  color: #D8C4B6;
+  padding: 3em 3em;
+  margin-top: 10em;
+}
+
+.footer-custom{
+  color: #D8C4B6;
+}
+
+
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-facebook:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.fa-twitter,
+.fa-facebook,
+.fa-instagram {
+  transition: opacity 0.7s;
+}
+
+.pasilyo{
+  color: #213555;
+}
+
+.ikaw-at-ikaw{
+  background-color: #213555;
+  border: none;
+  transition: opacity 0.7s;
+}
+
+.ikaw-at-ikaw:hover{
+  opacity: 0.8;
+}
+
+.hindi-ko-kayang-umibig-muli{
+  background-color: #D8C4B6;
+}
+
+.custom-size{
+  font-size: 1.1em;
+  width: 80%;
+  margin: auto;
+  line-height: 1.8em;
+}
+
+.hihintayin{
+  color: #213555;
+}
+
+.border-ray{
+  border-radius: 50%;
+  border: 2px solid #213555;
+}
+
+.mem-name{
+  color: #213555;
+}
+
+.mem-role{
+  color: #213555;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+.custom-margin{
+  margin-top: 7em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.hindi{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.muli{
+  cursor: pointer;
+}
+
+.table-back{
+  background-color: #334A70;
+  border-collapse: separate;
+  border: none;
+  border-spacing: 0 15px;
+  overflow-x: auto;
+  min-width: 600px; /* Prevents table from shrinking too much */
+}
+
+.table-back-2{
+  border-collapse: separate;
+  border: none;
+  border-spacing: 0 15px;
+  overflow-x: auto;
+  min-width: 600px; /* Prevents table from shrinking too much */
+}
+
+.goat-curry{
+  background-color: #213555;
+  color: #D8C4B6;
+  font-size: 1.1em;
+}
+
+.talo-memphis{
+  background-color: #D9D9D9;
+  color: #213555;
+}
+
+.talo-memphis-2{
+  color: #213555;
+  font-family: sans-serif;
+}
+
+.closer{
+  border-bottom: 1px solid #213555;
+}
+
+.opaci:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.opaci{
+  transition: opacity 0.5s;
+}
+
+.alot{
+  color: #213555
+}
+
+.alot-2{
+  color: #213555;
+  font-family: sans-serif;
+}
+
+.table-responsive{
+  width: 100%;
+  overflow-x: auto;
+}
+
+.task-row:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+.task-tooltip {
+  transition: opacity 0.3s;
+}
+
+.button-padding{
+  padding: 0.7em 2.5em;
+}
+
+.register-desc{
+  line-height: 1.8em
+}
+
+.adjust-width{
+  width: 45%;
+}
+
+.chasing-a-ghost{
+  gap: 6em;
+}
+
+@media (max-width: 992px) {
+  .chasing-a-ghost{
+    gap: 3em
+  }
+
+  .adjust-width{
+    text-align: center;
+    width: 70%;
+  }
+}
+
+.bor-img{
+  border: #213555 2px solid;
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image covers the entire container */
+  object-position: center; /* Centers the image within the container */
+  transition: opacity 0.7s;
+  width: 75%;
+}
+
+.bor-img:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.select-pic{
+  display: none;
+}
+
+.user-desc{
+  line-height: 2em;
+  font-size: 1.2em;
+  font-family: sans-serif;
+}
+
+.marg-lang{
+  margin-top: 7em;
+}
+
+.custom-background{
+  background-color: #3E5879;
+  padding: 3.5em 3.5em;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.edit-it{
+  font-family: sans-serif;
+}
+
+.edit-it-2{
+  font-family: sans-serif;
+  color: #3E5879;
+  font-weight: bold;
+}
+
+hr{
+  border: solid 1px #D9D9D9;
+}
+
+.dahan-dahan{
+  border: solid 1px #213555;
+}
+
+.qc{
+  color: #D9D9D9;
+  font-family: sans-serif;
+  font-size: 0.9em;
+  margin-top: 2.3em;
+  line-height: 1.7em;
+}
+
+.qc-2{
+  color: black;
+  font-family: sans-serif;
+  font-size: 0.9em;
+  margin-top: 2.3em;
+  line-height: 1.7em;
+}
+
+.first-section{
+  margin-bottom: 12em;
+}
+
+.task-desc{
+  font-family: sans-serif;
+  line-height: 1.6em;
+}
+
+.adjust-width-2{
+  width: 65%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 4em 4em;
+  border-radius: 15px;
+}
+
+.number-background-2{
+  background-color: #F5EFE7;
+  border-radius: 50%;
+  text-align: center;
+  border: none;
+  padding: 1em 1.5em;
+  font-size: 2.5em;
+  color: #213555;
+}
+
+@media (max-width: 1200px) {
+  .adjust-width-2{
+    width: 75%;
+  }
+}
+
+@media (max-width: 992px) {
+  .adjust-width-2{
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .adjust-width-2{
+    padding: 2em 2em;
+  }
+}
+
+@media (max-width: 490px) {
+  .adjust-width-2{
+    flex-direction: column;
+    text-align: center
+  }
+
+  .number-background-2{
+    width: 50%;
+    padding: 0 auto;
+    margin: 0 auto;
+  }
+}
+
+.custom-background-2{
+  background-color:#D8C4B6;
+  padding: 3.5em 3.5em;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.masisisi-mo-ba{
+  font-family: sans-serif;
+  color: #334A70;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+
+.about-sec{
+  margin-top: 6em;
+}
+
+.profile-width{
+  width: 25%;
+  border-radius: 50%;
+  border: #213555 1px solid;
+}
+
+.acm{
+  font-family: sans-serif;
+  margin-bottom: 0.2em;
+  font-weight: bold;
+}
+
+.acm-2{
+  font-family: sans-serif;
+  opacity: 0.8;
+  margin: 0;
+  font-size: 0.8em;
+}
+
+.mem-desc{
+  font-family: sans-serif;
+  margin-top: 1em;
+  font-size: 0.8em;
+  line-height: 1.7em;
+}
+
+.member-container{
+  padding: 2em 2em;
+  width: 40%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 7px;
+}
+
+@media (max-width:1200px) {
+  .member-container{
+    width: 50%;
+  }
+}
+
+@media (max-width:768px) {
+  .member-container{
+    width: 100%;
+  }
+}
+
+.meet-the-olmedos{
+  font-family: sans-serif;
+}
+
+.ibaba-mo-na{
+  margin-top: 12em;
+  color: #3E5879;
+}
+
+.meet-the-line{
+  width: 15%;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.faq-number{
+  font-size: 1.7em;
+  background-color: #213555;
+  padding: 1.5em 2em;
+  border-radius: 50%;
+  height: 50%;
+  color: #D8C4B6;
+}
+
+.frequently-asked{
+  font-family: sans-serif;
+  color: #213555
+}
+
+.pagsamo{
+  margin-top: 7em;
+}
+
+.sinabi-niya-ba-talaga-yan{
+  font-family: sans-serif;
+}
+
+.sinabi-niya-talaga{
+  background-color: #D8C4B6;
+  padding: 2em 2em;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.question{
+  font-family: sans-serif;
+  color: #213555;
+  margin-bottom: 1em;
+}
+
+.answer{
+  font-family: sans-serif;
+  line-height: 1.7em;
+}
