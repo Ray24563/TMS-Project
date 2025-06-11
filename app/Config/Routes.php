@@ -15,7 +15,6 @@ $routes->get('layouts/about', 'PagesController::about', ['filter' => 'auth']);
 
 // Admin Panel Dashboard
 $routes->get('layouts/home', 'DashboardController::index', ['filter' => 'auth']);
-$routes->get('layouts/home_user', 'UserPanelDashboardController::index', ['filter' => 'auth']);
 
 // Admin Panel User
 $routes->get('layouts/add_user', 'UserController::add', ['filter' => 'auth']);
