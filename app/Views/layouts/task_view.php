@@ -30,22 +30,6 @@
             <th class="p-3">Due Date</th>
             <th class="p-3">Assigned To</th> 
           </tr>
-
-          <tr class="talo-memphis-2 task-row">
-            <td class="p-3 closer">Pogi</td>
-            <td class="p-3 closer">Ako</td>
-            <td class="p-3 closer">Talaga Ba</td>
-            <td class="p-3 closer">Saras</td>
-            <td class="p-3 closer">Ows</td>
-          </tr>
-
-          <tr class="talo-memphis-2 task-row">
-            <td class="p-3 closer">Pogi</td>
-            <td class="p-3 closer">Ako</td>
-            <td class="p-3 closer">Talaga Ba</td>
-            <td class="p-3 closer">Saras</td>
-            <td class="p-3 closer">Ows</td>
-          </tr>
       
           <?php if(!empty($tasks)): ?>
             <?php $i = 1; foreach($tasks as $task): ?>
