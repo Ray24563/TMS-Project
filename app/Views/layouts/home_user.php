@@ -5,15 +5,17 @@
 <section class="container marg-lang first-section">
 
   <div class="d-flex justify-content-center flex-lg-row flex-column align-items-center gap-5 mb-5">
-
-    <div class="text-center fixed-width">
-      <label class="update-button" for="input-file"><img class="bor-img" src="<?= base_url('images/user.png'); ?>" id="profile-pic"></label>
-      <input class="select-pic" type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
-    </div>
+    <form id="profile-form" action="<?= base_url('upload-profile-picture') ?>" method="post" enctype="multipart/form-data">
+      <div class="text-center fixed-width">
+        <label class="update-button" for="input-file">
+          <img class="bor-img profile-pic-fixed" src="<?= base_url('public/uploads/' . esc($user['profile_picture'] ?? 'user.png')) ?>" id="profile-pic">
+        <input class="select-pic" type="file" accept="image/jpeg, image/png, image/jpg" id="input-file" name="profile_picture">
+      </div>
+    </form>
 
     <div class="text-lg-start text-center">
-      <h1 class="mb-4">Welcome, Name! </h1> <!-- Insert mo diyan yung user name ng nag register na user sa "name" -->
-      <p class="user-desc">Take control of your tasks and stay organized with a personalized experience designed specifically for your role. Whether you’re reviewing tasks assigned to you or keeping track of your team’s progress, everything you need is right here to help you stay informed and organized.</p>
+      <h1 class="mb-4">Welcome, <?= esc(session('username')) ?>!</h1>
+      <p class="user-desc">Stay informed and organized with a personalized view tailored to your role. Whether you're monitoring assigned tasks or tracking team’s progress, everything you need is right here — all in one place, for viewing purposes only.</p>
     </div>
   </div>
 </section>
@@ -87,5 +89,22 @@
   </div>
 
 </section>
+
+<script>
+// JavaScript to handle automatic form submission when file is selected
+document.getElementById('input-file').addEventListener('change', function() {
+    if (this.files && this.files[0]) {
+        // Optional: Preview the image before upload
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            document.getElementById('profile-pic').src = e.target.result;
+        };
+        reader.readAsDataURL(this.files[0]);
+        
+        // Submit the form
+        document.getElementById('profile-form').submit();
+    }
+});
+</script>
 
 <?= $this->endSection() ?>

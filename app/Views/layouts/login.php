@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?= base_url("styles/custom.css") ?>">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title><?= isset($title) ? $title : 'Default Title' ?></title>
+  <title><?= isset($title) ? $title : 'Login' ?></title>
 </head>
 <body>
 
@@ -19,6 +19,12 @@
       <img class="logo d-inline" src="<?= base_url("images/logo.png") ?>">
       <h1 class="d-inline text-center text-white align-middle">LOGIN</h1>
     </div>
+
+    <?php if (session()->getFlashdata('success')): ?>
+      <div class="alert alert-success text-center rounded-3">
+          <?= session()->getFlashdata('success') ?>
+      </div>
+    <?php endif; ?>
 
     <?php if(session()->getFlashdata('error')): ?>
       <div class="alert alert-danger text-center rounded-3">
@@ -41,8 +47,6 @@
 
   </div>
   <p class="fw-semibold adjust-margin">Need an account? <a href=<?= base_url('layouts/user_registration'); ?> class="link-to-register">Get Started Now</a></p>
-
-  <a href="<?= base_url('layouts/home_user'); ?>">Go to User Page<a> <!-- Burahin mo na lang toh, button lang toh para mag direct sa home ng user. Wala pa kasing restriction eh -->
 </div>
   
 </body>

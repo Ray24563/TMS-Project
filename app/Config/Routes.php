@@ -10,6 +10,7 @@ $routes->get('layouts/login', 'PagesController::login');
 $routes->post('layouts/loginCheck', 'PagesController::loginCheck');
 $routes->get('layouts/logout', 'PagesController::logout');
 $routes->get('layouts/user_registration', 'PagesController::registration');
+$routes->post('layouts/user_registration', 'PagesController::registerUser');
 
 // Admin Panel Dashboard
 $routes->get('layouts/home', 'DashboardController::index', ['filter' => 'auth']);
@@ -37,8 +38,9 @@ $routes->get('layouts/about', 'PagesController::about', ['filter' => 'auth']);
 
 // ------------------------------------------------------------------------------------------------------------ //
 
-// User Panel Dashboard
-$routes->get('layouts/home_user', 'UserPanelDashboardController::index', ['filter' => 'auth']);
+// Profile Picture and User Panel Dashboard
+$routes->post('upload-profile-picture', 'PagesController::uploadProfilePicture', ['filter' => 'auth']);
+$routes->get('layouts/home_user', 'PagesController::homeUser', ['filter' => 'auth']);
 
 // User Panel Task
 $routes->get('layouts/task_view', 'UserPanelTaskController::index', ['filter' => 'auth']);

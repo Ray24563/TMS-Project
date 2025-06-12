@@ -26,7 +26,7 @@
 
       <div class="d-flex align-items-center">
         <div class="hover-log me-2 d-inline-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample">
-          Admin <i class="fa fa-caret-square-o-right ms-2" aria-hidden="true"></i>
+          <?= esc(session('username')) ?> <i class="fa fa-caret-square-o-right ms-2" aria-hidden="true"></i>
         </div>
 
         <div>

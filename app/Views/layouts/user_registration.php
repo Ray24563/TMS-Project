@@ -31,7 +31,7 @@
         </div>
       <?php endif; ?>
 
-      <form action="<?= base_url('layouts/loginCheck') ?>" method="post" novalidate>
+      <form action="<?= base_url('layouts/user_registration') ?>" method="post" novalidate>
         <input class="form-control mb-4 pt-2 pb-2 pe-5" name="username" type="text" placeholder="Username" required>
         <div class="position-relative mb-4">
           <input id="password" class="form-control pt-2 pb-2 pe-5" name="password" type="password" placeholder="Password" required>
