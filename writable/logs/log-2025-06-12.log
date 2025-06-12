@@ -1,0 +1,626 @@
+ERROR - 2025-06-12 07:38:21 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'task-management...', 3306, '', 0)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#5 C:\xampp\htdocs\task-management\app\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+#8 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#3 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#4 C:\xampp\htdocs\task-management\app\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#5 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-12 07:38:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: layouts/home_user]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `users`', null, false)
+ 3 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+ 4 APPPATH\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', [])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-12 07:38:26 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'task-management...', 3306, '', 0)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#5 C:\xampp\htdocs\task-management\app\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+#8 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#3 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#4 C:\xampp\htdocs\task-management\app\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#5 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-12 07:38:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: layouts/home_user]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `users`', null, false)
+ 3 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+ 4 APPPATH\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', [])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-12 07:38:32 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'task-management...', 3306, '', 0)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#5 C:\xampp\htdocs\task-management\app\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+#8 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#3 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#4 C:\xampp\htdocs\task-management\app\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#5 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-12 07:38:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: layouts/home_user]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `users`', null, false)
+ 3 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+ 4 APPPATH\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', [])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-12 07:39:14 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'task-management...', 3306, '', 0)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#5 C:\xampp\htdocs\task-management\app\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+#8 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#3 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#4 C:\xampp\htdocs\task-management\app\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#5 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-12 07:39:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: layouts/home_user]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `users`', null, false)
+ 3 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+ 4 APPPATH\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', [])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-12 07:39:30 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'task-management...', 3306, '', 0)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#5 C:\xampp\htdocs\task-management\app\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+#8 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#3 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#4 C:\xampp\htdocs\task-management\app\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#5 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-12 07:39:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: layouts/home_user]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `users`', null, false)
+ 3 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+ 4 APPPATH\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', [])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-12 07:40:11 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'task-management...', 3306, '', 0)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#5 C:\xampp\htdocs\task-management\app\Controllers\DashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#8 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#3 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#4 C:\xampp\htdocs\task-management\app\Controllers\DashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#5 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-12 07:40:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: layouts/home]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `users`', null, false)
+ 3 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+ 4 APPPATH\Controllers\DashboardController.php(21): CodeIgniter\Model->__call('countAll', [])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-12 07:40:30 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'task-management...', 3306, '', 0)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#5 C:\xampp\htdocs\task-management\app\Controllers\DashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#8 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#3 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#4 C:\xampp\htdocs\task-management\app\Controllers\DashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#5 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-12 07:40:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: layouts/home]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `users`', null, false)
+ 3 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+ 4 APPPATH\Controllers\DashboardController.php(21): CodeIgniter\Model->__call('countAll', [])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-12 07:41:18 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'task-management...', 3306, '', 0)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#5 C:\xampp\htdocs\task-management\app\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+#8 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#3 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#4 C:\xampp\htdocs\task-management\app\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#5 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-12 07:41:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: layouts/home_user]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `users`', null, false)
+ 3 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+ 4 APPPATH\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', [])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-12 07:41:23 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'task-management...', 3306, '', 0)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#5 C:\xampp\htdocs\task-management\app\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+#8 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#3 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#4 C:\xampp\htdocs\task-management\app\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#5 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-12 07:41:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: layouts/home_user]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `users`', null, false)
+ 3 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+ 4 APPPATH\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', [])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-12 07:41:53 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'task-management...', 3306, '', 0)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#5 C:\xampp\htdocs\task-management\app\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+#8 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#3 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#4 C:\xampp\htdocs\task-management\app\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#5 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-12 07:41:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: layouts/home_user]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `users`', null, false)
+ 3 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+ 4 APPPATH\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', [])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-12 07:42:13 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'task-management...', 3306, '', 0)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#5 C:\xampp\htdocs\task-management\app\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+#8 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#3 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#4 C:\xampp\htdocs\task-management\app\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#5 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-12 07:42:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: layouts/home_user]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `users`', null, false)
+ 3 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+ 4 APPPATH\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', [])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-12 07:42:21 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'task-management...', 3306, '', 0)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#5 C:\xampp\htdocs\task-management\app\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+#8 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#3 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#4 C:\xampp\htdocs\task-management\app\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#5 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-12 07:42:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: layouts/home_user]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `users`', null, false)
+ 3 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+ 4 APPPATH\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', [])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-12 07:42:34 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'task-management...', 3306, '', 0)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#5 C:\xampp\htdocs\task-management\app\Controllers\DashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#8 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#3 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#4 C:\xampp\htdocs\task-management\app\Controllers\DashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#5 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-12 07:42:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: layouts/home]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `users`', null, false)
+ 3 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+ 4 APPPATH\Controllers\DashboardController.php(21): CodeIgniter\Model->__call('countAll', [])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-12 07:42:55 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'task-management...', 3306, '', 0)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#5 C:\xampp\htdocs\task-management\app\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+#8 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\task-management\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\task-management\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\task-management\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#3 C:\xampp\htdocs\task-management\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#4 C:\xampp\htdocs\task-management\app\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', Array)
+#5 C:\xampp\htdocs\task-management\system\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+#6 C:\xampp\htdocs\task-management\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+#7 C:\xampp\htdocs\task-management\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\task-management\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\task-management\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\task-management\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-12 07:42:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: layouts/home_user]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `users`', null, false)
+ 3 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+ 4 APPPATH\Controllers\UserPanelDashboardController.php(21): CodeIgniter\Model->__call('countAll', [])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserPanelDashboardController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPanelDashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-12 07:54:42 --> TypeError: view(): Argument #1 ($name) must be of type string, array given, called in C:\xampp\htdocs\task-management\app\Controllers\PagesController.php on line 52
+[Method: GET, Route: layouts/about]
+in SYSTEMPATH\Common.php on line 1161.
+ 1 APPPATH\Controllers\PagesController.php(52): view([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PagesController->about()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PagesController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
