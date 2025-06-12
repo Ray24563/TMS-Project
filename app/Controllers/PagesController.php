@@ -11,7 +11,7 @@ class PagesController extends BaseController{
     $this->response->setHeader('Cache-Control', 'no-store, no-cache, must-revalidate');
     $this->response->setHeader('Pragma', 'no-cache');
     $this->response->setHeader('Expires', '0');
-    return view('layouts/index', ['title' => 'Login']);
+    return view('layouts/login', ['title' => 'Login']);
   }
 
   // Login/Logout and Register functions
@@ -40,7 +40,7 @@ class PagesController extends BaseController{
 
   public function logout() {
     session()->destroy();
-    return redirect()->to(base_url('/'));
+    return redirect()->to(base_url('layouts/login'));
   }
 
   public function registration() {

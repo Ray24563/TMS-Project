@@ -44,7 +44,7 @@
         </div>
       </form>
     </div>
-    <p class="fw-semibold text-center adjust-margin">Already have an account? <a href="<?= base_url('/'); ?>" class="link-to-register">Sign In</a></p>
+    <p class="fw-semibold text-center adjust-margin">Already have an account? <a href="<?= base_url('layouts/login'); ?>" class="link-to-register">Sign In</a></p>
   </div>
 </div>
   
