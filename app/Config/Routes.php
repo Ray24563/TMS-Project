@@ -5,13 +5,11 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-// PagesController Routes
+// Login and Registration Routes
 $routes->get('/', 'PagesController::login');
 $routes->post('layouts/loginCheck', 'PagesController::loginCheck');
 $routes->get('layouts/logout', 'PagesController::logout');
 $routes->get('layouts/user_registration', 'PagesController::registration');
-$routes->get('layouts/about_user', 'PagesController::userAbout');
-$routes->get('layouts/about', 'PagesController::about', ['filter' => 'auth']); 
 
 // Admin Panel Dashboard
 $routes->get('layouts/home', 'DashboardController::index', ['filter' => 'auth']);
@@ -34,9 +32,17 @@ $routes->post('task/update', 'TaskController::update', ['filter' => 'auth']);
 $routes->get('task/delete/(:num)', 'TaskController::delete/$1', ['filter' => 'auth']);
 $routes->get('task/getTaskDetail/(:num)', 'TaskController::getTaskDetail/$1', ['filter' => 'auth']);
 
+// Admin Panel About 
+$routes->get('layouts/about', 'PagesController::about', ['filter' => 'auth']);
+
+// ------------------------------------------------------------------------------------------------------------ //
+
 // User Panel Dashboard
-$routes->get('layouts/home_user', 'UserPanelDashboardController::index', ['filter' => 'auth']);
+$routes->get('layouts/home_user', 'UserPanelDashboardController::index');
 
 // User Panel Task
-$routes->get('layouts/task_view', 'UserPanelTaskController::index', ['filter' => 'auth']);
+$routes->get('layouts/task_view', 'UserPanelTaskController::index');
 $routes->get('task/getTaskDetail/(:num)', 'UserPanelTaskController::getTaskDetail/$1', ['filter' => 'auth']);
+
+// User Panel About
+$routes->get('layouts/about_user', 'PagesController::userAbout');
