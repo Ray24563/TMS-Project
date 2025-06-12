@@ -38,11 +38,11 @@ $routes->get('layouts/about', 'PagesController::about', ['filter' => 'auth']);
 // ------------------------------------------------------------------------------------------------------------ //
 
 // User Panel Dashboard
-$routes->get('layouts/home_user', 'UserPanelDashboardController::index');
+$routes->get('layouts/home_user', 'UserPanelDashboardController::index', ['filter' => 'auth']);
 
 // User Panel Task
-$routes->get('layouts/task_view', 'UserPanelTaskController::index');
+$routes->get('layouts/task_view', 'UserPanelTaskController::index', ['filter' => 'auth']);
 $routes->get('task/getTaskDetail/(:num)', 'UserPanelTaskController::getTaskDetail/$1', ['filter' => 'auth']);
 
 // User Panel About
-$routes->get('layouts/about_user', 'PagesController::userAbout');
+$routes->get('layouts/about_user', 'PagesController::userAbout', ['filter' => 'auth']);

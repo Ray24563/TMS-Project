@@ -17,7 +17,7 @@ class UserPanelTaskController extends Controller
     }
     
     public function index() {
-        $data['title'] = 'Manage Task';
+        $data['title'] = 'Task List';
         $data['tasks'] = $this->taskModel->getTasksWithUsernames();
         $data['totalTasks'] = count($data['tasks']);
         return view('layouts/task_view', $data);
