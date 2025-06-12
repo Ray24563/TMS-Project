@@ -6,7 +6,7 @@
 
   <div class="d-flex justify-content-center flex-lg-row flex-column align-items-center gap-5 mb-5">
 
-    <div class="text-center">
+    <div class="text-center fixed-width">
       <label class="update-button" for="input-file"><img class="bor-img" src="<?= base_url('images/user.png'); ?>" id="profile-pic"></label>
       <input class="select-pic" type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
     </div>

@@ -350,6 +350,11 @@ body{
   width: 75%;
 }
 
+.fixed-width{
+  max-width: 300px;
+  margin: 0 auto;
+}
+
 .bor-img:hover{
   cursor: pointer;
   opacity: 0.8;
