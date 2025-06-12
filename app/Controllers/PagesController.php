@@ -14,67 +14,7 @@ class PagesController extends BaseController{
     return view('layouts/index', ['title' => 'Login']);
   }
 
-  public function registration() {
-    return view('layouts/user_registration', ['title' => 'Registration']);
-  }
-
-  public function userHome() {
-    return view('layouts/home_user', ['title' => 'Home']);
-  }
-
-  public function userAbout() {
-    return view('layouts/about_user', ['title' => 'About']);
-  }
-
-  public function userTaskView() {
-    return view('layouts/task_view', ['title' => 'Tasks']);
-  }
-
-  public function home() {
-    if (!session()->has('isLoggedIn')) {
-      return redirect()->to(base_url('/'))->with('error', 'Please log in first.');
-    }
-
-    return view('layouts/home', ['title' => 'Homepage']);
-  }
-
-  public function add_user() {
-    if (!session()->has('isLoggedIn')) {
-      return redirect()->to(base_url('/'))->with('error', 'Please log in first.');
-    }
-    return view('layouts/add_user', ['title' => 'Add User']);
-  }
-
-  public function about() {
-    if (!session()->has('isLoggedIn')) {
-      return redirect()->to(base_url('/'))->with('error', 'Please log in first.');
-    }
-    return view('layouts/about', ['title' => 'About']);
-  }
-
-  public function add_task() {
-    if (!session()->has('isLoggedIn')) {
-      return redirect()->to(base_url('/'))->with('error', 'Please log in first.');
-    }
-
-    return view('layouts/add_task', ['title' => 'Add Task']);
-  }
-
-  public function manage_task() {
-    if (!session()->has('isLoggedIn')) {
-      return redirect()->to(base_url('/'))->with('error', 'Please log in first.');
-    }
-
-    return view('layouts/manage_task', ['title' => 'Manage Task']);
-  }
-
-  public function manage_user() {
-    if (!session()->has('isLoggedIn')) {
-      return redirect()->to(base_url('/'))->with('error', 'Please log in first.');
-    }
-    return view('layouts/manage_user', ['title' => 'Manage User']);
-  }
-
+  // Login/Logout and Register functions
   public function loginCheck(){
     $username = $this->request->getPost('username');
     $password = $this->request->getPost('password');
@@ -82,7 +22,6 @@ class PagesController extends BaseController{
     $valid_username = "tmsadmin";
     $valid_password = "livelovelebron";
 
-    
     if ($username === $valid_username && $password === $valid_password) {
       session()->set('isLoggedIn', true);
       return redirect()->to(base_url('layouts/home'));
@@ -102,5 +41,18 @@ class PagesController extends BaseController{
   public function logout() {
     session()->destroy();
     return redirect()->to(base_url('/'));
+  }
+
+  public function registration() {
+    return view('layouts/user_registration', ['title' => 'Registration']);
+  }
+
+  // About Pages for Admin and User Panel
+  public function about() {
+    return view('layouts/about', ['title' => 'About']);
+  }
+
+  public function userAbout() {
+    return view('layouts/about_user', ['title' => 'About']);
   }
 }
