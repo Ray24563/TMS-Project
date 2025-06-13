@@ -11,7 +11,7 @@ class Auth implements FilterInterface
     public function before(RequestInterface $request, $arguments = null)
     {
         if (!session()->has('isLoggedIn')) {
-            return redirect()->to(base_url('layouts/login'))->with('error', 'Please log in first.');
+            return redirect()->to(base_url('/'))->with('error', 'Please log in first.');
         }
     }
 

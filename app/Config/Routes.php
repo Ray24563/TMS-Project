@@ -6,7 +6,7 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 // Login and Registration Routes
-$routes->get('layouts/login', 'PagesController::login');
+$routes->get('/', 'PagesController::login');
 $routes->post('layouts/loginCheck', 'PagesController::loginCheck');
 $routes->get('layouts/logout', 'PagesController::logout');
 $routes->get('layouts/user_registration', 'PagesController::registration');

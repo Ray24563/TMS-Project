@@ -78,12 +78,12 @@ class PagesController extends BaseController{
           'profile_picture' => 'user.png',
       ]);
 
-      return redirect()->to(base_url('layouts/login'))->with('success', 'Registration successful.');
+      return redirect()->to(base_url('/'))->with('success', 'Registration successful.');
   }
 
   public function logout() {
     session()->destroy();
-    return redirect()->to(base_url('layouts/login'));
+    return redirect()->to(base_url('/'));
   }
 
   public function uploadProfilePicture() {
@@ -91,7 +91,7 @@ class PagesController extends BaseController{
     
     // Check if user is logged in
     if (!$userId) {
-        return redirect()->to(base_url('layouts/login'))->with('error', 'Please log in first.');
+        return redirect()->to(base_url('/'))->with('error', 'Please log in first.');
     }
     
     $file = $this->request->getFile('profile_picture');
