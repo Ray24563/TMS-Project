@@ -22,13 +22,24 @@ const base_url = document.querySelector('base')?.href || window.location.origin 
   }, false);
 })();
 
-// Auto-dismiss alerts after 5 seconds
+// Auto-dismiss alerts after 3 seconds
 document.addEventListener('DOMContentLoaded', function() {
-  setTimeout(function() {
-    const alerts = document.querySelectorAll('.alert');
-    alerts.forEach(function(alert) {
-      const bsAlert = new bootstrap.Alert(alert);
-      bsAlert.close();
-    });
-  }, 5000);
+  const successAlert = document.getElementById('success-alert');
+  const errorAlert = document.getElementById('error-alert');
+  
+  if (successAlert) {
+    setTimeout(() => {
+      successAlert.style.transition = 'opacity 0.5s';
+      successAlert.style.opacity = '0';
+      setTimeout(() => successAlert.remove(), 500);
+    }, 3000);
+  }
+  
+  if (errorAlert) {
+    setTimeout(() => {
+      errorAlert.style.transition = 'opacity 0.5s';
+      errorAlert.style.opacity = '0';
+      setTimeout(() => errorAlert.remove(), 500);
+    }, 3000);
+  }
 });

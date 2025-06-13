@@ -25,12 +25,6 @@
         <h1 class="d-inline text-center text-white align-middle">REGISTER</h1>
       </div>
 
-      <?php if(session()->getFlashdata('error')): ?>
-        <div class="alert alert-danger text-center rounded-3">
-          <?= session()->getFlashdata('error') ?>
-        </div>
-      <?php endif; ?>
-
       <form action="<?= base_url('layouts/user_registration') ?>" method="post" novalidate>
         <input class="form-control mb-4 pt-2 pb-2 pe-5" name="username" type="text" placeholder="Username" required>
         <div class="position-relative mb-4">
@@ -50,4 +44,20 @@
   
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="<?= base_url('script/script.js') ?>"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const togglePassword = document.querySelector('.toggle-password');
+    const passwordInput = document.querySelector('#password');
+
+    togglePassword.addEventListener('click', function () {
+      const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+      passwordInput.setAttribute('type', type);
+
+      // Toggle the icon
+      this.classList.toggle('fa-eye');
+      this.classList.toggle('fa-eye-slash');
+    });
+  });
+</script>
 </html>

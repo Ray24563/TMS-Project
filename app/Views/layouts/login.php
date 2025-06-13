@@ -21,13 +21,13 @@
     </div>
 
     <?php if (session()->getFlashdata('success')): ?>
-      <div class="alert alert-success text-center rounded-3">
+      <div class="alert alert-success text-center rounded-3" id="success-alert">
           <?= session()->getFlashdata('success') ?>
       </div>
     <?php endif; ?>
 
     <?php if(session()->getFlashdata('error')): ?>
-      <div class="alert alert-danger text-center rounded-3">
+      <div class="alert alert-danger text-center rounded-3" id="error-alert">
         <?= session()->getFlashdata('error') ?>
       </div>
     <?php endif; ?>
@@ -51,6 +51,7 @@
   
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="<?= base_url('script/script.js') ?>"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     const togglePassword = document.querySelector('.toggle-password');
