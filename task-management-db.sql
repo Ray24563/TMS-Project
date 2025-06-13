@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 11, 2025 at 08:13 AM
+-- Generation Time: Jun 13, 2025 at 09:42 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -20,6 +20,28 @@ SET time_zone = "+00:00";
 --
 -- Database: `task-management-db`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `registered_users`
+--
+
+CREATE TABLE `registered_users` (
+  `id` int(11) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `profile_picture` varchar(255) DEFAULT 'user.png'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `registered_users`
+--
+
+INSERT INTO `registered_users` (`id`, `username`, `password`, `created_at`, `profile_picture`) VALUES
+(1, 'tester1', '$2y$10$FAlraheGYi2fqM5gBoHjNeW8rFUWfl6XZmKK9oW8IdRtVk3EaFB5e', '2025-06-13 07:36:46', 'user.png'),
+(2, 'tester2', '$2y$10$Mddn5nWbbP.j8BkG3bfl2O9yAXgCXbC/2G12fDmjBZaJI2Ib.5YXq', '2025-06-13 07:37:30', '1749800316_d280f38f9a74da8ee308.jpg');
 
 -- --------------------------------------------------------
 
@@ -83,6 +105,13 @@ INSERT INTO `users` (`id`, `first_name`, `last_name`, `email`, `username`, `phon
 --
 
 --
+-- Indexes for table `registered_users`
+--
+ALTER TABLE `registered_users`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `username` (`username`);
+
+--
 -- Indexes for table `tasks`
 --
 ALTER TABLE `tasks`
@@ -100,6 +129,12 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `registered_users`
+--
+ALTER TABLE `registered_users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tasks`
